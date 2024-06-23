@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Calculator</title>
+<main>
+<section class="content">
+    <p> Hello Everyone! Welcome you all</p>
+    <P> Here you can get fun by clicking on the button "click me".</P>
+    <p> Let us just relax our mind before starting your math. Best of Luck</p>
+
+</section>
+</main>
+
+<style>
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: larger;
+        font-style: italic;
+        background-color: rgb(250, 240, 222);
+    }
+    .content{
+        font-size: large;
+        font-family: Helvetica;
+        font-style: oblique;
+        color: rgb(248, 71, 71);
+    }
+    .color-change-button {
+        padding: 10px 20px;
+        font-size: 30px;
+        cursor: pointer;
+        width: 40%;
+        background-color: #1e3b6d;
+        color: white;
+        border: 10px, #070707;
+        border-radius: 5px;
+        outline: none;
+    }
+    .message-box {
+        padding: 10px;
+        font-size: 20px;
+        width: 38%;
+        text-align: center;
+        background-color: #546980;
+        color: white;
+        border-radius: 5px;
+    }
+    .calculator {
+        max-width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #f78585;
+        border-radius: 5px;
+        text-align: center;
+    }
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+    }
+</style>
+</head>
+<body>
+
+<button class="color-change-button" onclick="changeColor()">Click Me</button>
+<P>The greeting message you got is :</P>
+<div class = "message-box" id="message"></div>
+<p> Have a great day!</p>
+<p>TO ADD TWO NUMBERS USE THE CALCULATOR BELOW :</p>
+<div class="calculator">
+    <h2>Basic Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter first number"><br>
+    <input type="number" id="num2" placeholder="Enter second number"><br>
+    <button onclick="addnum()">Add</button><br>
+    <h3 id="result"></h3>
+</div>
+
+<script src="calci.js"></script>
+</body>
+</html>
